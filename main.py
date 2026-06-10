@@ -7,9 +7,9 @@ from telegram import InlineKeyboardButton, InlineKeyboardMarkup, Update
 from telegram.ext import Application, CommandHandler, MessageHandler, CallbackQueryHandler, ContextTypes, filters
 
 # Настройки через переменные окружения
-TOKEN = os.environ.get("8650718107:AAHVYiqhrgBjVqrebaHEWEK0R615Nmm8TZE")
-MAC_ADDRESS = os.environ.get("00:E0:2F:1D:4D:34")  # "00:E0:2F:1D:4D:34"
-BROADCAST_IP = os.environ.get("192.168.1.255", "255.255.255.255")
+TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
+MAC_ADDRESS = os.environ.get("TARGET_MAC")  # "00:E0:2F:1D:4D:34"
+BROADCAST_IP = os.environ.get("BROADCAST_IP", "255.255.255.255")
 CORRECT_PASSWORD = os.environ.get("ACCESS_CODE", "9506")
 PC_IP = os.environ.get("PC_IP", "192.168.1.50")
 SSH_USER = os.environ.get("SSH_USER", "your_username")
